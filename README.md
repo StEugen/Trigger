@@ -1,7 +1,7 @@
 # Trigger
 <i>"Event-based automation for modern infrastructure."</i>
 
-Trigger is a lightweight, open-source tool that allows users to define event-driven workflows in Kubernetes or Linux/cloud-native environments. Think of it as a simplified, focused version of tools like Argo Events or Tekton Triggers — but more flexible, easier to configure, and designed for sysadmins/SREs/devs who want to automate infra-related tasks based on events.
+Trigger is a lightweight, open-source tool that allows users to define event-driven workflows in Kubernetes or Linux/cloud-native environments. Think of it as a simplified, focused version of tools like Argo Events or Tekton Triggers — but more flexible, easier to configure, and designed for sysadmins/SREs/devs who want to automate infra-related tasks based on events. You can also think about Trigger as "cool version of crontab" but for cloud-native/k8s environments
 
 ## Problems it solves:
 1. Event-based Automation in K8s is Complex
