@@ -6,10 +6,15 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
+type Trigger struct {
+	Event      string `yaml:"event"`
+	Identifier string `yaml:"identifier"`
+	Action     string `yaml:"action"`
+}
+
 type Config struct {
-	// Example configuration fields.
-	Name        string `yaml:"name"`
-	Description string `yaml:"description"`
+	TriggerEnvironment string    `yaml:"trigger_environment"`
+	Triggers           []Trigger `yaml:"triggers"`
 }
 
 func Load(file string) (*Config, error) {
@@ -25,3 +30,4 @@ func Load(file string) (*Config, error) {
 	}
 	return &cfg, nil
 }
+
