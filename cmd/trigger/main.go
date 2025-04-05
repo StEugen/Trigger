@@ -12,7 +12,7 @@ func main() {
 	fmt.Println("Starting Trigger...")
 
 	// Here will be load of conf
-	cfg, err := config.Load("config.yaml")
+	cfg, err := config.Load("/etc/trigger/config.yaml")
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error loading configuration: %v\n", err)
 		os.Exit(1)
