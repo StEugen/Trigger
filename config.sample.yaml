@@ -3,7 +3,8 @@
 # Sample config for Trigger
 # Modify and place in /etc/trigger/
 
-trigger_environment: "cloud or k8s (on-premise)" 
+trigger_environment: "cloud" 
+source: "k8s"
 
 triggers:
   - event: "pod_restart"

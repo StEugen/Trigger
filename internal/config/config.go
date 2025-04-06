@@ -14,6 +14,7 @@ type Trigger struct {
 
 type Config struct {
 	TriggerEnvironment string    `yaml:"trigger_environment"`
+  Source             string    `yaml:"source"`
 	Triggers           []Trigger `yaml:"triggers"`
 }
 
